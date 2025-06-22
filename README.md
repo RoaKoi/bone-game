@@ -1,2 +1,3 @@
-# bone game
-Game witha lot of bones, top down rpg
+# Bone Game
+Top-down RPG game with turn-based combat, and it's all about bones.
+The Bone Doctor is coming.
