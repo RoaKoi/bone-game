@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bagob40c1d8m5"]
 
-[ext_resource type="Script" uid="uid://dgotq0ukvtbnp" path="res://turn_queue.gd" id="1_kgg5g"]
-[ext_resource type="Texture2D" uid="uid://qt5nqn2v7bgy" path="res://circlechar.png" id="2_00arq"]
+[ext_resource type="Script" uid="uid://dgotq0ukvtbnp" path="res://Scripts/turn_queue.gd" id="1_kgg5g"]
+[ext_resource type="Texture2D" uid="uid://qt5nqn2v7bgy" path="res://Art/circlechar.png" id="2_00arq"]
 
 [node name="TurnQueue" type="Node2D"]
 script = ExtResource("1_kgg5g")
