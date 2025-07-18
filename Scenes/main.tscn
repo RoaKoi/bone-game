@@ -1,3 +1,40 @@
-[gd_scene format=3 uid="uid://c51pgywm3prna"]
+[gd_scene load_steps=5 format=3 uid="uid://c51pgywm3prna"]
+
+[ext_resource type="PackedScene" uid="uid://do7kntuhx8tj7" path="res://Scenes/player.tscn" id="1_8gbba"]
+[ext_resource type="Texture2D" uid="uid://bt8y02vqx83fr" path="res://Art/skeleton.jpeg" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://qt5nqn2v7bgy" path="res://Art/circlechar.png" id="2_8gbba"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jjvhh"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-4, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+visibility_layer = 2
+position = Vector2(579.5, 323.5)
+scale = Vector2(0.383667, 0.215667)
+texture = ExtResource("1_bo1nx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(221, 225)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(0.0461884, 0.0461884)
+texture = ExtResource("2_8gbba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+scale = Vector2(3.84615, 3.8372)
+shape = SubResource("CircleShape2D_jjvhh")
+
+[node name="Player" parent="." instance=ExtResource("1_8gbba")]
+position = Vector2(574, 329)
+
+[node name="Camera2D" parent="Player" index="2"]
+limit_left = 0
+limit_top = 0
+limit_right = 1150
+limit_bottom = 645
+
+[editable path="Player"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="bone game"
-run/main_scene="res://Scenes/player.tscn"
+run/main_scene="uid://c51pgywm3prna"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://Art/icon.svg"
 
@@ -21,7 +21,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"character": "res://Dialog Characters/character.dch"
+}
 directories/dtl_directory={}
 
 [editor_plugins]
