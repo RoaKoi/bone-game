@@ -1,44 +1,17 @@
-[gd_scene format=3 uid="uid://b5rwshytmssg0"]
+[gd_scene format=3 uid="uid://j85emnbfnea"]
 
-[ext_resource type="Texture2D" uid="uid://bt8y02vqx83fr" path="res://Art/skeleton.jpeg" id="1_vgqql"]
-[ext_resource type="Script" uid="uid://8jr48jyissyh" path="res://Scripts/character_body_2d.gd" id="2_fkybt"]
-[ext_resource type="Texture2D" uid="uid://dlv76pgxug3yr" path="res://Art/icon.svg" id="3_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://qt5nqn2v7bgy" path="res://Art/circlechar.png" id="4_3smsa"]
+[ext_resource type="Script" uid="uid://dx3bydogheqdy" path="res://Scripts/player/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://dib1d6bgo606l" path="res://Art/Box Guy/Box Guy.png" id="1_v0iea"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(128, 128)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(28, 27.715)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_hqtel"]
+[node name="Player" type="CharacterBody2D" unique_id=218603527]
+script = ExtResource("1_cvnsp")
 
-[node name="startscene" type="Node2D"]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1320657579]
+texture = ExtResource("1_v0iea")
 
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(-4, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
-position = Vector2(583.254, 320)
-scale = Vector2(0.389164, 0.220941)
-texture = ExtResource("1_vgqql")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(560, 324)
-script = ExtResource("2_fkybt")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("3_x3wgy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_hqtel")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(221, 225)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-scale = Vector2(0.0461884, 0.0461884)
-texture = ExtResource("4_3smsa")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-scale = Vector2(3.84615, 3.8372)
-shape = SubResource("CircleShape2D_hqtel")
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406681829]
+position = Vector2(0, 17.8575)
+shape = SubResource("RectangleShape2D_3xd07")

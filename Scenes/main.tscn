@@ -1,14 +1,8 @@
-<<<<<<< Updated upstream
-[gd_scene format=3 uid="uid://c51pgywm3prna"]
+[gd_scene format=3 uid="uid://ctd31u20n0aoo"]
 
-[node name="Main" type="Node2D"]
-=======
-[gd_scene format=3 uid="uid://fm6o0y4plj5r"]
+[ext_resource type="PackedScene" uid="uid://j85emnbfnea" path="res://Scenes/player.tscn" id="1_jjgbg"]
 
-[ext_resource type="PackedScene" uid="uid://d167t1na2ed2p" path="res://player.tscn" id="1_jjgbg"]
+[node name="Main" type="Node2D" unique_id=1943262149]
 
-[node name="Main" type="Node2D" unique_id=1454755275]
-
-[node name="Player" parent="." unique_id=287606170 instance=ExtResource("1_jjgbg")]
-position = Vector2(331, 174)
->>>>>>> Stashed changes
+[node name="Player" parent="." unique_id=218603527 instance=ExtResource("1_jjgbg")]
+position = Vector2(297, 177)
