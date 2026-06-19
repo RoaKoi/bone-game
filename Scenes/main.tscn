@@ -1,3 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://c51pgywm3prna"]
 
 [node name="Main" type="Node2D"]
+=======
+[gd_scene format=3 uid="uid://fm6o0y4plj5r"]
+
+[ext_resource type="PackedScene" uid="uid://d167t1na2ed2p" path="res://player.tscn" id="1_jjgbg"]
+
+[node name="Main" type="Node2D" unique_id=1454755275]
+
+[node name="Player" parent="." unique_id=287606170 instance=ExtResource("1_jjgbg")]
+position = Vector2(331, 174)
+>>>>>>> Stashed changes
