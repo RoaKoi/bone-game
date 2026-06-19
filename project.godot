@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="bone game"
 run/main_scene="uid://c51pgywm3prna"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://Art/icon.svg"
 
 [autoload]
@@ -25,9 +25,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={
-"character": "res://Dialog Characters/character.dch"
-}
+directories/dch_directory={}
 directories/dtl_directory={}
 
 [editor_plugins]
