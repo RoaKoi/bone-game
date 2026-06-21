@@ -1,12 +1,15 @@
 extends Node
 
 var canMove = true
+var isInteracting = false
 
 func start_dialogue():
 	canMove = false
+	isInteracting = true
 
 func end_dialogue():
 	canMove = true
+	isInteracting = false
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
