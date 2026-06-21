@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://du2y4dm46a0hj"]
+
+[ext_resource type="Script" uid="uid://fcmx8qx65cp8" path="res://Scenes/NPCs/NPC (Template)/npcTemplate.gd" id="1_a0yy8"]
+[ext_resource type="Texture2D" uid="uid://dc05poaxn4tdj" path="res://icon.svg" id="1_cmmfx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(28, 28)
+
+[node name="NPC (Template)" type="CharacterBody2D" unique_id=1195003343]
+script = ExtResource("1_a0yy8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1421541626]
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("1_cmmfx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1348797988]
+shape = SubResource("RectangleShape2D_3xd07")

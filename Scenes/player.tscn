@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dx3bydogheqdy" path="res://Scripts/player/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://546nhdnc0cxi" path="res://Art/Box Guy/box guy v2.png" id="2_cvnsp"]
+[ext_resource type="Script" uid="uid://cu280lotfem88" path="res://Scripts/player/ray_cast_2d.gd" id="3_6t5aa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
 size = Vector2(20, 4.8575)
@@ -15,3 +16,10 @@ texture = ExtResource("2_cvnsp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406681829]
 position = Vector2(0, 21.42875)
 shape = SubResource("RectangleShape2D_3xd07")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1094781811]
+modulate = Color(0.7045573, 0.48299384, 0, 1)
+self_modulate = Color(0.9506096, 0, 0.27073717, 1)
+position = Vector2(0, 21.43)
+target_position = Vector2(0, 20)
+script = ExtResource("3_6t5aa")

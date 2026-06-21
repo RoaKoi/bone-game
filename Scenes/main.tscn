@@ -2,9 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://j85emnbfnea" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="Texture2D" uid="uid://bt8y02vqx83fr" path="res://Art/skeleton.jpeg" id="2_bo1nx"]
-[ext_resource type="PackedScene" uid="uid://du2y4dm46a0hj" path="res://Scenes/first_npc_im_crode.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://du2y4dm46a0hj" path="res://Scenes/NPCs/NPC (Template)/npcTemplate.tscn" id="3_8gbba"]
+
+[sub_resource type="GDScript" id="GDScript_8gbba"]
+script/source = "extends Node2D
+"
 
 [node name="Main" type="Node2D" unique_id=1943262149]
+script = SubResource("GDScript_8gbba")
 
 [node name="Player" parent="." unique_id=218603527 instance=ExtResource("1_jjgbg")]
 position = Vector2(297, 177)
@@ -15,5 +20,5 @@ position = Vector2(320, 179.99995)
 scale = Vector2(0.21333334, 0.120000035)
 texture = ExtResource("2_bo1nx")
 
-[node name="first npc im crode" parent="." unique_id=1195003343 instance=ExtResource("3_8gbba")]
-position = Vector2(107, 86)
+[node name="NPC (Template)" parent="." unique_id=1195003343 instance=ExtResource("3_8gbba")]
+position = Vector2(88, 72)
