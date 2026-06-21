@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogicStyle" format=3 uid="uid://cedenukjvwgox"]
+
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_kjcs2"]
+[ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn" id="2_47p57"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_sii31"]
+
+[sub_resource type="Resource" id="Resource_47p57"]
+script = ExtResource("1_kjcs2")
+
+[sub_resource type="Resource" id="Resource_xlrv4"]
+script = ExtResource("1_kjcs2")
+scene = ExtResource("2_47p57")
+
+[resource]
+script = ExtResource("2_sii31")
+name = "dialogueBox"
+layer_list = Array[String](["10"])
+layer_info = {
+"": SubResource("Resource_47p57"),
+"10": SubResource("Resource_xlrv4")
+}
+metadata/_latest_layer = "10"

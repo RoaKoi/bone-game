@@ -13,3 +13,6 @@ func _physics_process(delta: float) -> void:
 	
 	velocity = input_vector * SPEED
 	move_and_slide()
+
+func player():
+	pass

@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://j85emnbfnea"]
 
 [ext_resource type="Script" uid="uid://dx3bydogheqdy" path="res://Scripts/player/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://dib1d6bgo606l" path="res://Art/Box Guy/Box Guy.png" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://546nhdnc0cxi" path="res://Art/Box Guy/box guy v2.png" id="2_cvnsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
-size = Vector2(28, 27.715)
+size = Vector2(20, 4.8575)
 
 [node name="Player" type="CharacterBody2D" unique_id=218603527]
 script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1320657579]
-texture = ExtResource("1_v0iea")
+texture = ExtResource("2_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1406681829]
-position = Vector2(0, 17.8575)
+position = Vector2(0, 21.42875)
 shape = SubResource("RectangleShape2D_3xd07")
