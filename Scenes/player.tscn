@@ -24,3 +24,12 @@ self_modulate = Color(0.9506096, 0, 0.27073717, 1)
 position = Vector2(0, 21.43)
 target_position = Vector2(0, 20)
 script = ExtResource("3_6t5aa")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=369345828]
+zoom = Vector2(1.25, 1.25)
+limit_left = 0
+limit_top = 0
+limit_right = 640
+limit_bottom = 360
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
